@@ -2,53 +2,37 @@
 package obj;
 public class Diagnosis
 {
-    private Status Status;
+    private String Description;
 
-    private DiagnosingClinician DiagnosingClinician;
+    private String SDACodingStandard;
 
-    private DiagnosisType DiagnosisType;
+    private PriorCodes PriorCodes;
 
-    private Diagnosis Diagnosis;
+    private String Code;
 
-    private String EncounterNumber;
-
-    private EnteredAt EnteredAt;
-
-    public void setStatus(Status Status){
-        this.Status = Status;
+    public void setDescription(String Description){
+        this.Description = Description;
     }
-    public Status getStatus(){
-        return this.Status;
+    public String getDescription(){
+        return this.Description;
     }
-    public void setDiagnosingClinician(DiagnosingClinician DiagnosingClinician){
-        this.DiagnosingClinician = DiagnosingClinician;
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
     }
-    public DiagnosingClinician getDiagnosingClinician(){
-        return this.DiagnosingClinician;
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
     }
-    public void setDiagnosisType(DiagnosisType DiagnosisType){
-        this.DiagnosisType = DiagnosisType;
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
     }
-    public DiagnosisType getDiagnosisType(){
-        return this.DiagnosisType;
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
     }
-    public void setDiagnosis(Diagnosis Diagnosis){
-        this.Diagnosis = Diagnosis;
+    public void setCode(String Code){
+        this.Code = Code;
     }
-    public Diagnosis getDiagnosis(){
-        return this.Diagnosis;
-    }
-    public void setEncounterNumber(String EncounterNumber){
-        this.EncounterNumber = EncounterNumber;
-    }
-    public String getEncounterNumber(){
-        return this.EncounterNumber;
-    }
-    public void setEnteredAt(EnteredAt EnteredAt){
-        this.EnteredAt = EnteredAt;
-    }
-    public EnteredAt getEnteredAt(){
-        return this.EnteredAt;
+    public String getCode(){
+        return this.Code;
     }
 }
 

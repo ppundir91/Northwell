@@ -6,8 +6,6 @@ public class OrderItem
 
     private String SDACodingStandard;
 
-    private PriorCodes PriorCodes;
-
     private String Code;
 
     public void setDescription(String Description){
@@ -21,12 +19,6 @@ public class OrderItem
     }
     public String getSDACodingStandard(){
         return this.SDACodingStandard;
-    }
-    public void setPriorCodes(PriorCodes PriorCodes){
-        this.PriorCodes = PriorCodes;
-    }
-    public PriorCodes getPriorCodes(){
-        return this.PriorCodes;
     }
     public void setCode(String Code){
         this.Code = Code;

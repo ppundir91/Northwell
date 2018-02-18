@@ -1,10 +1,16 @@
 
 package obj;
-public class OrderedBy
+public class Clinician1
 {
     private String Description;
 
     private String SDACodingStandard;
+
+    private Address Address;
+
+    private ContactInfo ContactInfo;
+
+    private CareProviderType CareProviderType;
 
     private String Code;
 
@@ -21,6 +27,24 @@ public class OrderedBy
     }
     public String getSDACodingStandard(){
         return this.SDACodingStandard;
+    }
+    public void setAddress(Address Address){
+        this.Address = Address;
+    }
+    public Address getAddress(){
+        return this.Address;
+    }
+    public void setContactInfo(ContactInfo ContactInfo){
+        this.ContactInfo = ContactInfo;
+    }
+    public ContactInfo getContactInfo(){
+        return this.ContactInfo;
+    }
+    public void setCareProviderType(CareProviderType CareProviderType){
+        this.CareProviderType = CareProviderType;
+    }
+    public CareProviderType getCareProviderType(){
+        return this.CareProviderType;
     }
     public void setCode(String Code){
         this.Code = Code;

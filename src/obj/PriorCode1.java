@@ -1,6 +1,6 @@
 
 package obj;
-public class PriorCode
+public class PriorCode1
 {
     private String Code;
 

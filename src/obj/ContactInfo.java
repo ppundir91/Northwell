@@ -2,13 +2,13 @@
 package obj;
 public class ContactInfo
 {
-    private String EmailAddress;
+    private String HomePhoneNumber;
 
-    public void setEmailAddress(String EmailAddress){
-        this.EmailAddress = EmailAddress;
+    public void setHomePhoneNumber(String HomePhoneNumber){
+        this.HomePhoneNumber = HomePhoneNumber;
     }
-    public String getEmailAddress(){
-        return this.EmailAddress;
+    public String getHomePhoneNumber(){
+        return this.HomePhoneNumber;
     }
 }
 

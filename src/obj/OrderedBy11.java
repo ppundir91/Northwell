@@ -1,10 +1,8 @@
 
 package obj;
-public class OrderedBy
+public class OrderedBy11
 {
     private String Description;
-
-    private String SDACodingStandard;
 
     private String Code;
 
@@ -15,12 +13,6 @@ public class OrderedBy
     }
     public String getDescription(){
         return this.Description;
-    }
-    public void setSDACodingStandard(String SDACodingStandard){
-        this.SDACodingStandard = SDACodingStandard;
-    }
-    public String getSDACodingStandard(){
-        return this.SDACodingStandard;
     }
     public void setCode(String Code){
         this.Code = Code;

@@ -1,6 +1,6 @@
 
 package obj;
-public class CareProviderType
+public class EnteredBy111
 {
     private String Description;
 

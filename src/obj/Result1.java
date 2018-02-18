@@ -1,30 +1,32 @@
 
 package obj;
-public class Result
+public class Result1
 {
-    private String EnteredOn;
+    private String ResultInterpretation;
+
+    private ResultItems ResultItems;
 
     private String ResultStatus;
 
     private String ResultTime;
 
-    private String ResultText;
-
     private String Comments;
 
     private String DocumentURL;
 
-    private String AuthorizationTime;
-
     private String ResultType;
 
-    private String DocumentName;
-
-    public void setEnteredOn(String EnteredOn){
-        this.EnteredOn = EnteredOn;
+    public void setResultInterpretation(String ResultInterpretation){
+        this.ResultInterpretation = ResultInterpretation;
     }
-    public String getEnteredOn(){
-        return this.EnteredOn;
+    public String getResultInterpretation(){
+        return this.ResultInterpretation;
+    }
+    public void setResultItems(ResultItems ResultItems){
+        this.ResultItems = ResultItems;
+    }
+    public ResultItems getResultItems(){
+        return this.ResultItems;
     }
     public void setResultStatus(String ResultStatus){
         this.ResultStatus = ResultStatus;
@@ -38,12 +40,6 @@ public class Result
     public String getResultTime(){
         return this.ResultTime;
     }
-    public void setResultText(String ResultText){
-        this.ResultText = ResultText;
-    }
-    public String getResultText(){
-        return this.ResultText;
-    }
     public void setComments(String Comments){
         this.Comments = Comments;
     }
@@ -56,23 +52,11 @@ public class Result
     public String getDocumentURL(){
         return this.DocumentURL;
     }
-    public void setAuthorizationTime(String AuthorizationTime){
-        this.AuthorizationTime = AuthorizationTime;
-    }
-    public String getAuthorizationTime(){
-        return this.AuthorizationTime;
-    }
     public void setResultType(String ResultType){
         this.ResultType = ResultType;
     }
     public String getResultType(){
         return this.ResultType;
-    }
-    public void setDocumentName(String DocumentName){
-        this.DocumentName = DocumentName;
-    }
-    public String getDocumentName(){
-        return this.DocumentName;
     }
 }
 

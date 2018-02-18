@@ -1,12 +1,10 @@
 
 package obj;
-public class Procedure
+public class Race1
 {
     private String Description;
 
     private String SDACodingStandard;
-
-    private PriorCodes PriorCodes;
 
     private String Code;
 
@@ -21,12 +19,6 @@ public class Procedure
     }
     public String getSDACodingStandard(){
         return this.SDACodingStandard;
-    }
-    public void setPriorCodes(PriorCodes PriorCodes){
-        this.PriorCodes = PriorCodes;
-    }
-    public PriorCodes getPriorCodes(){
-        return this.PriorCodes;
     }
     public void setCode(String Code){
         this.Code = Code;

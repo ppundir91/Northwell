@@ -2,7 +2,7 @@
 package obj;
 import java.util.ArrayList;
 import java.util.List;
-public class PriorCodes
+public class PriorCodes1
 {
     private List<PriorCode> PriorCode;
 

@@ -1,6 +1,6 @@
 
 package obj;
-public class Procedure
+public class OrderItem11
 {
     private String Description;
 

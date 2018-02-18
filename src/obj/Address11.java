@@ -1,14 +1,12 @@
 
 package obj;
-public class Address
+public class Address11
 {
     private Zip Zip;
 
     private State State;
 
     private String Street;
-
-    private Country Country;
 
     private City City;
 
@@ -29,12 +27,6 @@ public class Address
     }
     public String getStreet(){
         return this.Street;
-    }
-    public void setCountry(Country Country){
-        this.Country = Country;
-    }
-    public Country getCountry(){
-        return this.Country;
     }
     public void setCity(City City){
         this.City = City;
