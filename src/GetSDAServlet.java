@@ -1,29 +1,31 @@
 
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 /**
  * Servlet implementation class GetSDAServlet
@@ -77,9 +79,20 @@ public class GetSDAServlet extends HttpServlet {
 
             if (entity != null) 
             {
-            	ServletContext servletContext = getServletContext();
-            	RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/ParseDataServlet");
-            	requestDispatcher.forward(httpRequest, httpResponse);
+            	String result = EntityUtils.toString(entity);
+            	JSONObject obj = new JSONObject(result);
+            	JSONObject container = obj.getJSONObject("Container");
+            	Map<String,Object> map = new HashMap<String,Object>();
+            	Iterator keys = container.keys();
+            	while(keys.hasNext()) {
+            		String key = keys.next().toString();
+            		Object value = container.get(key);
+            		map.put(key, value);
+            	}
+            	HttpSession session = httpRequest.getSession();
+            	setSession(session,map);
+            	RequestDispatcher dispatcher = httpRequest.getRequestDispatcher("Summary.jsp");
+            	dispatcher.forward( httpRequest, httpResponse );
             }
         }
         catch (Exception e)
@@ -88,13 +101,10 @@ public class GetSDAServlet extends HttpServlet {
         }
 	}
 	
-	protected void parseData(HttpRequest request, HttpResponse response) throws UnsupportedOperationException, ParseException, IOException, JSONException {
-		System.out.println("request received");
-		JSONObject obj = (JSONObject) new JSONParser().parse(response.getEntity().getContent().toString());
-		Map Name = (Map) obj.get("Name");
-		PatientSession session = new PatientSession();
-		session.setName(Name);
-		
+	public void setSession(HttpSession session, Map<String,Object> map) {
+		for(String key: map.keySet()) {
+			session.setAttribute(key, map.get(key));
+		}
 	}
 
 }
