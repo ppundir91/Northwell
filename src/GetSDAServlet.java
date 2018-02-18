@@ -65,23 +65,26 @@ public class GetSDAServlet extends HttpServlet {
 
             HttpResponse response = httpclient.execute(request);
             HttpEntity entity = response.getEntity();
-
+            httpResponse.setContentType("application/json");
+            
             if (entity != null) 
             {
             	String result = EntityUtils.toString(entity);
             	JSONObject obj = new JSONObject(result);
-            	JSONObject container = obj.getJSONObject("Container");
-            	Map<String,Object> map = new HashMap<String,Object>();
-            	Iterator keys = container.keys();
-            	while(keys.hasNext()) {
-            		String key = keys.next().toString();
-            		Object value = container.get(key);
-            		map.put(key, value);
-            	}
-            	HttpSession session = httpRequest.getSession();
-            	setSession(session,map);
-            	RequestDispatcher dispatcher = httpRequest.getRequestDispatcher("Summary.jsp");
-            	dispatcher.forward( httpRequest, httpResponse );
+            	httpResponse.getWriter().print(obj);
+            	
+//            	JSONObject container = obj.getJSONObject("Container");
+//            	Map<String,Object> map = new HashMap<String,Object>();
+//            	Iterator keys = container.keys();
+//            	while(keys.hasNext()) {
+//            		String key = keys.next().toString();
+//            		Object value = container.get(key);
+//            		map.put(key, value);
+//            	}
+//            	HttpSession session = httpRequest.getSession();
+//            	setSession(session,map);
+//            	RequestDispatcher dispatcher = httpRequest.getRequestDispatcher("Summary.jsp");
+//            	dispatcher.forward( httpRequest, httpResponse );
             }
         }
         catch (Exception e)

@@ -1,0 +1,4918 @@
+==================================
+package obj;
+public class SocialHabit
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class SocialHistory
+{
+    private String Status;
+
+    private String UpdatedOn;
+
+    private String SocialHabitComments;
+
+    private SocialHabit SocialHabit;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setUpdatedOn(String UpdatedOn){
+        this.UpdatedOn = UpdatedOn;
+    }
+    public String getUpdatedOn(){
+        return this.UpdatedOn;
+    }
+    public void setSocialHabitComments(String SocialHabitComments){
+        this.SocialHabitComments = SocialHabitComments;
+    }
+    public String getSocialHabitComments(){
+        return this.SocialHabitComments;
+    }
+    public void setSocialHabit(SocialHabit SocialHabit){
+        this.SocialHabit = SocialHabit;
+    }
+    public SocialHabit getSocialHabit(){
+        return this.SocialHabit;
+    }
+}
+
+==================================
+package obj;
+public class SocialHistories
+{
+    private SocialHistory SocialHistory;
+
+    public void setSocialHistory(SocialHistory SocialHistory){
+        this.SocialHistory = SocialHistory;
+    }
+    public SocialHistory getSocialHistory(){
+        return this.SocialHistory;
+    }
+}
+
+==================================
+package obj;
+public class FamilyMember
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PriorCode
+{
+    private String Code;
+
+    private String CodeSystem;
+
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setCodeSystem(String CodeSystem){
+        this.CodeSystem = CodeSystem;
+    }
+    public String getCodeSystem(){
+        return this.CodeSystem;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class PriorCodes
+{
+    private List<PriorCode> PriorCode;
+
+    public void setPriorCode(List<PriorCode> PriorCode){
+        this.PriorCode = PriorCode;
+    }
+    public List<PriorCode> getPriorCode(){
+        return this.PriorCode;
+    }
+}
+
+==================================
+package obj;
+public class Diagnosis
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private PriorCodes PriorCodes;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
+    }
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class FamilyHistory
+{
+    private String Status;
+
+    private String EnteredOn;
+
+    private FamilyMember FamilyMember;
+
+    private String NoteText;
+
+    private String UpdatedOn;
+
+    private Diagnosis Diagnosis;
+
+    private String EncounterNumber;
+
+    private EnteredAt EnteredAt;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setFamilyMember(FamilyMember FamilyMember){
+        this.FamilyMember = FamilyMember;
+    }
+    public FamilyMember getFamilyMember(){
+        return this.FamilyMember;
+    }
+    public void setNoteText(String NoteText){
+        this.NoteText = NoteText;
+    }
+    public String getNoteText(){
+        return this.NoteText;
+    }
+    public void setUpdatedOn(String UpdatedOn){
+        this.UpdatedOn = UpdatedOn;
+    }
+    public String getUpdatedOn(){
+        return this.UpdatedOn;
+    }
+    public void setDiagnosis(Diagnosis Diagnosis){
+        this.Diagnosis = Diagnosis;
+    }
+    public Diagnosis getDiagnosis(){
+        return this.Diagnosis;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class FamilyHistories
+{
+    private List<FamilyHistory> FamilyHistory;
+
+    public void setFamilyHistory(List<FamilyHistory> FamilyHistory){
+        this.FamilyHistory = FamilyHistory;
+    }
+    public List<FamilyHistory> getFamilyHistory(){
+        return this.FamilyHistory;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class ReferringClinician
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class AdmittingClinician
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class SeparationMode
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class AdmissionSource
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class CareProvider
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class AttendingClinicians
+{
+    private CareProvider CareProvider;
+
+    public void setCareProvider(CareProvider CareProvider){
+        this.CareProvider = CareProvider;
+    }
+    public CareProvider getCareProvider(){
+        return this.CareProvider;
+    }
+}
+
+==================================
+package obj;
+public class EnteredBy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Organization
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class HealthCareFacility
+{
+    private String Description;
+
+    private Organization Organization;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setOrganization(Organization Organization){
+        this.Organization = Organization;
+    }
+    public Organization getOrganization(){
+        return this.Organization;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Encounter
+{
+    private String EnteredOn;
+
+    private ReferringClinician ReferringClinician;
+
+    private String EndTime;
+
+    private AdmittingClinician AdmittingClinician;
+
+    private SeparationMode SeparationMode;
+
+    private String EncounterNumber;
+
+    private String AccountNumber;
+
+    private String EncounterMRN;
+
+    private String ToTime;
+
+    private AdmissionSource AdmissionSource;
+
+    private AttendingClinicians AttendingClinicians;
+
+    private EnteredBy EnteredBy;
+
+    private String EncounterType;
+
+    private String FromTime;
+
+    private HealthCareFacility HealthCareFacility;
+
+    private EnteredAt EnteredAt;
+
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setReferringClinician(ReferringClinician ReferringClinician){
+        this.ReferringClinician = ReferringClinician;
+    }
+    public ReferringClinician getReferringClinician(){
+        return this.ReferringClinician;
+    }
+    public void setEndTime(String EndTime){
+        this.EndTime = EndTime;
+    }
+    public String getEndTime(){
+        return this.EndTime;
+    }
+    public void setAdmittingClinician(AdmittingClinician AdmittingClinician){
+        this.AdmittingClinician = AdmittingClinician;
+    }
+    public AdmittingClinician getAdmittingClinician(){
+        return this.AdmittingClinician;
+    }
+    public void setSeparationMode(SeparationMode SeparationMode){
+        this.SeparationMode = SeparationMode;
+    }
+    public SeparationMode getSeparationMode(){
+        return this.SeparationMode;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setAccountNumber(String AccountNumber){
+        this.AccountNumber = AccountNumber;
+    }
+    public String getAccountNumber(){
+        return this.AccountNumber;
+    }
+    public void setEncounterMRN(String EncounterMRN){
+        this.EncounterMRN = EncounterMRN;
+    }
+    public String getEncounterMRN(){
+        return this.EncounterMRN;
+    }
+    public void setToTime(String ToTime){
+        this.ToTime = ToTime;
+    }
+    public String getToTime(){
+        return this.ToTime;
+    }
+    public void setAdmissionSource(AdmissionSource AdmissionSource){
+        this.AdmissionSource = AdmissionSource;
+    }
+    public AdmissionSource getAdmissionSource(){
+        return this.AdmissionSource;
+    }
+    public void setAttendingClinicians(AttendingClinicians AttendingClinicians){
+        this.AttendingClinicians = AttendingClinicians;
+    }
+    public AttendingClinicians getAttendingClinicians(){
+        return this.AttendingClinicians;
+    }
+    public void setEnteredBy(EnteredBy EnteredBy){
+        this.EnteredBy = EnteredBy;
+    }
+    public EnteredBy getEnteredBy(){
+        return this.EnteredBy;
+    }
+    public void setEncounterType(String EncounterType){
+        this.EncounterType = EncounterType;
+    }
+    public String getEncounterType(){
+        return this.EncounterType;
+    }
+    public void setFromTime(String FromTime){
+        this.FromTime = FromTime;
+    }
+    public String getFromTime(){
+        return this.FromTime;
+    }
+    public void setHealthCareFacility(HealthCareFacility HealthCareFacility){
+        this.HealthCareFacility = HealthCareFacility;
+    }
+    public HealthCareFacility getHealthCareFacility(){
+        return this.HealthCareFacility;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Encounters
+{
+    private List<Encounter> Encounter;
+
+    public void setEncounter(List<Encounter> Encounter){
+        this.Encounter = Encounter;
+    }
+    public List<Encounter> getEncounter(){
+        return this.Encounter;
+    }
+}
+
+==================================
+package obj;
+public class Organization
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PatientNumber
+{
+    private String NumberType;
+
+    private Organization Organization;
+
+    private String ISOAssigningAuthority;
+
+    private String Number;
+
+    public void setNumberType(String NumberType){
+        this.NumberType = NumberType;
+    }
+    public String getNumberType(){
+        return this.NumberType;
+    }
+    public void setOrganization(Organization Organization){
+        this.Organization = Organization;
+    }
+    public Organization getOrganization(){
+        return this.Organization;
+    }
+    public void setISOAssigningAuthority(String ISOAssigningAuthority){
+        this.ISOAssigningAuthority = ISOAssigningAuthority;
+    }
+    public String getISOAssigningAuthority(){
+        return this.ISOAssigningAuthority;
+    }
+    public void setNumber(String Number){
+        this.Number = Number;
+    }
+    public String getNumber(){
+        return this.Number;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class PatientNumbers
+{
+    private List<PatientNumber> PatientNumber;
+
+    public void setPatientNumber(List<PatientNumber> PatientNumber){
+        this.PatientNumber = PatientNumber;
+    }
+    public List<PatientNumber> getPatientNumber(){
+        return this.PatientNumber;
+    }
+}
+
+==================================
+package obj;
+public class CreatedBy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class MothersFullName
+{
+    private String FamilyName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+}
+
+==================================
+package obj;
+public class Religion
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Aliases
+{
+    private List<Name> Name;
+
+    public void setName(List<Name> Name){
+        this.Name = Name;
+    }
+    public List<Name> getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class Gender
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PrimaryLanguage
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class Zip
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class State
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Country
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class City
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Address
+{
+    private Zip Zip;
+
+    private State State;
+
+    private String Street;
+
+    private Country Country;
+
+    private City City;
+
+    public void setZip(Zip Zip){
+        this.Zip = Zip;
+    }
+    public Zip getZip(){
+        return this.Zip;
+    }
+    public void setState(State State){
+        this.State = State;
+    }
+    public State getState(){
+        return this.State;
+    }
+    public void setStreet(String Street){
+        this.Street = Street;
+    }
+    public String getStreet(){
+        return this.Street;
+    }
+    public void setCountry(Country Country){
+        this.Country = Country;
+    }
+    public Country getCountry(){
+        return this.Country;
+    }
+    public void setCity(City City){
+        this.City = City;
+    }
+    public City getCity(){
+        return this.City;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Addresses
+{
+    private List<Address> Address;
+
+    public void setAddress(List<Address> Address){
+        this.Address = Address;
+    }
+    public List<Address> getAddress(){
+        return this.Address;
+    }
+}
+
+==================================
+package obj;
+public class MaritalStatus
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class ContactType
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Zip
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class State
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class City
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Address
+{
+    private Zip Zip;
+
+    private State State;
+
+    private String Street;
+
+    private City City;
+
+    public void setZip(Zip Zip){
+        this.Zip = Zip;
+    }
+    public Zip getZip(){
+        return this.Zip;
+    }
+    public void setState(State State){
+        this.State = State;
+    }
+    public State getState(){
+        return this.State;
+    }
+    public void setStreet(String Street){
+        this.Street = Street;
+    }
+    public String getStreet(){
+        return this.Street;
+    }
+    public void setCity(City City){
+        this.City = City;
+    }
+    public City getCity(){
+        return this.City;
+    }
+}
+
+==================================
+package obj;
+public class Relationship
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class ContactInfo
+{
+    private String HomePhoneNumber;
+
+    public void setHomePhoneNumber(String HomePhoneNumber){
+        this.HomePhoneNumber = HomePhoneNumber;
+    }
+    public String getHomePhoneNumber(){
+        return this.HomePhoneNumber;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+}
+
+==================================
+package obj;
+public class SupportContact
+{
+    private ContactType ContactType;
+
+    private Address Address;
+
+    private Relationship Relationship;
+
+    private ContactInfo ContactInfo;
+
+    private Name Name;
+
+    public void setContactType(ContactType ContactType){
+        this.ContactType = ContactType;
+    }
+    public ContactType getContactType(){
+        return this.ContactType;
+    }
+    public void setAddress(Address Address){
+        this.Address = Address;
+    }
+    public Address getAddress(){
+        return this.Address;
+    }
+    public void setRelationship(Relationship Relationship){
+        this.Relationship = Relationship;
+    }
+    public Relationship getRelationship(){
+        return this.Relationship;
+    }
+    public void setContactInfo(ContactInfo ContactInfo){
+        this.ContactInfo = ContactInfo;
+    }
+    public ContactInfo getContactInfo(){
+        return this.ContactInfo;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class SupportContacts
+{
+    private List<SupportContact> SupportContact;
+
+    public void setSupportContact(List<SupportContact> SupportContact){
+        this.SupportContact = SupportContact;
+    }
+    public List<SupportContact> getSupportContact(){
+        return this.SupportContact;
+    }
+}
+
+==================================
+package obj;
+public class NVPair
+{
+    private String Value;
+
+    private String Name;
+
+    public void setValue(String Value){
+        this.Value = Value;
+    }
+    public String getValue(){
+        return this.Value;
+    }
+    public void setName(String Name){
+        this.Name = Name;
+    }
+    public String getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class CustomPairs
+{
+    private List<NVPair> NVPair;
+
+    public void setNVPair(List<NVPair> NVPair){
+        this.NVPair = NVPair;
+    }
+    public List<NVPair> getNVPair(){
+        return this.NVPair;
+    }
+}
+
+==================================
+package obj;
+public class Race
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Races
+{
+    private List<Race> Race;
+
+    public void setRace(List<Race> Race){
+        this.Race = Race;
+    }
+    public List<Race> getRace(){
+        return this.Race;
+    }
+}
+
+==================================
+package obj;
+public class Race
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class ContactInfo
+{
+    private String WorkPhoneNumber;
+
+    private String HomePhoneNumber;
+
+    private String MobilePhoneNumber;
+
+    private String EmailAddress;
+
+    public void setWorkPhoneNumber(String WorkPhoneNumber){
+        this.WorkPhoneNumber = WorkPhoneNumber;
+    }
+    public String getWorkPhoneNumber(){
+        return this.WorkPhoneNumber;
+    }
+    public void setHomePhoneNumber(String HomePhoneNumber){
+        this.HomePhoneNumber = HomePhoneNumber;
+    }
+    public String getHomePhoneNumber(){
+        return this.HomePhoneNumber;
+    }
+    public void setMobilePhoneNumber(String MobilePhoneNumber){
+        this.MobilePhoneNumber = MobilePhoneNumber;
+    }
+    public String getMobilePhoneNumber(){
+        return this.MobilePhoneNumber;
+    }
+    public void setEmailAddress(String EmailAddress){
+        this.EmailAddress = EmailAddress;
+    }
+    public String getEmailAddress(){
+        return this.EmailAddress;
+    }
+}
+
+==================================
+package obj;
+public class EnteredBy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Patient
+{
+    private PatientNumbers PatientNumbers;
+
+    private String MPIID;
+
+    private CreatedBy CreatedBy;
+
+    private String EnteredOn;
+
+    private MothersFullName MothersFullName;
+
+    private Religion Religion;
+
+    private String IsDead;
+
+    private Aliases Aliases;
+
+    private Gender Gender;
+
+    private PrimaryLanguage PrimaryLanguage;
+
+    private Name Name;
+
+    private String Extension;
+
+    private Addresses Addresses;
+
+    private String MothersMaidenName;
+
+    private MaritalStatus MaritalStatus;
+
+    private SupportContacts SupportContacts;
+
+    private CustomPairs CustomPairs;
+
+    private Races Races;
+
+    private String BirthTime;
+
+    private Race Race;
+
+    private ContactInfo ContactInfo;
+
+    private EnteredBy EnteredBy;
+
+    private String CreatedOn;
+
+    private EnteredAt EnteredAt;
+
+    public void setPatientNumbers(PatientNumbers PatientNumbers){
+        this.PatientNumbers = PatientNumbers;
+    }
+    public PatientNumbers getPatientNumbers(){
+        return this.PatientNumbers;
+    }
+    public void setMPIID(String MPIID){
+        this.MPIID = MPIID;
+    }
+    public String getMPIID(){
+        return this.MPIID;
+    }
+    public void setCreatedBy(CreatedBy CreatedBy){
+        this.CreatedBy = CreatedBy;
+    }
+    public CreatedBy getCreatedBy(){
+        return this.CreatedBy;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setMothersFullName(MothersFullName MothersFullName){
+        this.MothersFullName = MothersFullName;
+    }
+    public MothersFullName getMothersFullName(){
+        return this.MothersFullName;
+    }
+    public void setReligion(Religion Religion){
+        this.Religion = Religion;
+    }
+    public Religion getReligion(){
+        return this.Religion;
+    }
+    public void setIsDead(String IsDead){
+        this.IsDead = IsDead;
+    }
+    public String getIsDead(){
+        return this.IsDead;
+    }
+    public void setAliases(Aliases Aliases){
+        this.Aliases = Aliases;
+    }
+    public Aliases getAliases(){
+        return this.Aliases;
+    }
+    public void setGender(Gender Gender){
+        this.Gender = Gender;
+    }
+    public Gender getGender(){
+        return this.Gender;
+    }
+    public void setPrimaryLanguage(PrimaryLanguage PrimaryLanguage){
+        this.PrimaryLanguage = PrimaryLanguage;
+    }
+    public PrimaryLanguage getPrimaryLanguage(){
+        return this.PrimaryLanguage;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+    public void setExtension(String Extension){
+        this.Extension = Extension;
+    }
+    public String getExtension(){
+        return this.Extension;
+    }
+    public void setAddresses(Addresses Addresses){
+        this.Addresses = Addresses;
+    }
+    public Addresses getAddresses(){
+        return this.Addresses;
+    }
+    public void setMothersMaidenName(String MothersMaidenName){
+        this.MothersMaidenName = MothersMaidenName;
+    }
+    public String getMothersMaidenName(){
+        return this.MothersMaidenName;
+    }
+    public void setMaritalStatus(MaritalStatus MaritalStatus){
+        this.MaritalStatus = MaritalStatus;
+    }
+    public MaritalStatus getMaritalStatus(){
+        return this.MaritalStatus;
+    }
+    public void setSupportContacts(SupportContacts SupportContacts){
+        this.SupportContacts = SupportContacts;
+    }
+    public SupportContacts getSupportContacts(){
+        return this.SupportContacts;
+    }
+    public void setCustomPairs(CustomPairs CustomPairs){
+        this.CustomPairs = CustomPairs;
+    }
+    public CustomPairs getCustomPairs(){
+        return this.CustomPairs;
+    }
+    public void setRaces(Races Races){
+        this.Races = Races;
+    }
+    public Races getRaces(){
+        return this.Races;
+    }
+    public void setBirthTime(String BirthTime){
+        this.BirthTime = BirthTime;
+    }
+    public String getBirthTime(){
+        return this.BirthTime;
+    }
+    public void setRace(Race Race){
+        this.Race = Race;
+    }
+    public Race getRace(){
+        return this.Race;
+    }
+    public void setContactInfo(ContactInfo ContactInfo){
+        this.ContactInfo = ContactInfo;
+    }
+    public ContactInfo getContactInfo(){
+        return this.ContactInfo;
+    }
+    public void setEnteredBy(EnteredBy EnteredBy){
+        this.EnteredBy = EnteredBy;
+    }
+    public EnteredBy getEnteredBy(){
+        return this.EnteredBy;
+    }
+    public void setCreatedOn(String CreatedOn){
+        this.CreatedOn = CreatedOn;
+    }
+    public String getCreatedOn(){
+        return this.CreatedOn;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+public class NVPair
+{
+    private String Value;
+
+    private String Name;
+
+    public void setValue(String Value){
+        this.Value = Value;
+    }
+    public String getValue(){
+        return this.Value;
+    }
+    public void setName(String Name){
+        this.Name = Name;
+    }
+    public String getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class CustomPairs
+{
+    private List<NVPair> NVPair;
+
+    public void setNVPair(List<NVPair> NVPair){
+        this.NVPair = NVPair;
+    }
+    public List<NVPair> getNVPair(){
+        return this.NVPair;
+    }
+}
+
+==================================
+package obj;
+public class PriorCode
+{
+    private String Code;
+
+    private String CodeSystem;
+
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setCodeSystem(String CodeSystem){
+        this.CodeSystem = CodeSystem;
+    }
+    public String getCodeSystem(){
+        return this.CodeSystem;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class PriorCodes
+{
+    private List<PriorCode> PriorCode;
+
+    public void setPriorCode(List<PriorCode> PriorCode){
+        this.PriorCode = PriorCode;
+    }
+    public List<PriorCode> getPriorCode(){
+        return this.PriorCode;
+    }
+}
+
+==================================
+package obj;
+public class Procedure
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private PriorCodes PriorCodes;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
+    }
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class CareProviderType
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String ProfessionalSuffix;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setProfessionalSuffix(String ProfessionalSuffix){
+        this.ProfessionalSuffix = ProfessionalSuffix;
+    }
+    public String getProfessionalSuffix(){
+        return this.ProfessionalSuffix;
+    }
+}
+
+==================================
+package obj;
+public class Clinician
+{
+    private String Description;
+
+    private CareProviderType CareProviderType;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCareProviderType(CareProviderType CareProviderType){
+        this.CareProviderType = CareProviderType;
+    }
+    public CareProviderType getCareProviderType(){
+        return this.CareProviderType;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Procedure
+{
+    private CustomPairs CustomPairs;
+
+    private String EnteredOn;
+
+    private String UpdatedOn;
+
+    private Procedure Procedure;
+
+    private String EncounterNumber;
+
+    private Clinician Clinician;
+
+    private EnteredAt EnteredAt;
+
+    public void setCustomPairs(CustomPairs CustomPairs){
+        this.CustomPairs = CustomPairs;
+    }
+    public CustomPairs getCustomPairs(){
+        return this.CustomPairs;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setUpdatedOn(String UpdatedOn){
+        this.UpdatedOn = UpdatedOn;
+    }
+    public String getUpdatedOn(){
+        return this.UpdatedOn;
+    }
+    public void setProcedure(Procedure Procedure){
+        this.Procedure = Procedure;
+    }
+    public Procedure getProcedure(){
+        return this.Procedure;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setClinician(Clinician Clinician){
+        this.Clinician = Clinician;
+    }
+    public Clinician getClinician(){
+        return this.Clinician;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Procedures
+{
+    private List<Procedure> Procedure;
+
+    public void setProcedure(List<Procedure> Procedure){
+        this.Procedure = Procedure;
+    }
+    public List<Procedure> getProcedure(){
+        return this.Procedure;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String NameSuffix;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setNameSuffix(String NameSuffix){
+        this.NameSuffix = NameSuffix;
+    }
+    public String getNameSuffix(){
+        return this.NameSuffix;
+    }
+}
+
+==================================
+package obj;
+public class OrderedBy
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class Organization
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteringOrganization
+{
+    private String Description;
+
+    private Organization Organization;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setOrganization(Organization Organization){
+        this.Organization = Organization;
+    }
+    public Organization getOrganization(){
+        return this.Organization;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Priority
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Result
+{
+    private String EnteredOn;
+
+    private String ResultStatus;
+
+    private String ResultTime;
+
+    private String ResultText;
+
+    private String Comments;
+
+    private String DocumentURL;
+
+    private String AuthorizationTime;
+
+    private String ResultType;
+
+    private String DocumentName;
+
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setResultStatus(String ResultStatus){
+        this.ResultStatus = ResultStatus;
+    }
+    public String getResultStatus(){
+        return this.ResultStatus;
+    }
+    public void setResultTime(String ResultTime){
+        this.ResultTime = ResultTime;
+    }
+    public String getResultTime(){
+        return this.ResultTime;
+    }
+    public void setResultText(String ResultText){
+        this.ResultText = ResultText;
+    }
+    public String getResultText(){
+        return this.ResultText;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setDocumentURL(String DocumentURL){
+        this.DocumentURL = DocumentURL;
+    }
+    public String getDocumentURL(){
+        return this.DocumentURL;
+    }
+    public void setAuthorizationTime(String AuthorizationTime){
+        this.AuthorizationTime = AuthorizationTime;
+    }
+    public String getAuthorizationTime(){
+        return this.AuthorizationTime;
+    }
+    public void setResultType(String ResultType){
+        this.ResultType = ResultType;
+    }
+    public String getResultType(){
+        return this.ResultType;
+    }
+    public void setDocumentName(String DocumentName){
+        this.DocumentName = DocumentName;
+    }
+    public String getDocumentName(){
+        return this.DocumentName;
+    }
+}
+
+==================================
+package obj;
+public class OrderItem
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredBy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class OrderCategory
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class RadOrder
+{
+    private String Status;
+
+    private String PlacerId;
+
+    private String EnteredOn;
+
+    private String FillerId;
+
+    private OrderedBy OrderedBy;
+
+    private EnteringOrganization EnteringOrganization;
+
+    private Priority Priority;
+
+    private String Comments;
+
+    private String TextInstruction;
+
+    private String OrderQuantity;
+
+    private Result Result;
+
+    private String EncounterNumber;
+
+    private String SpecimenCollectedTime;
+
+    private String VerifiedComments;
+
+    private OrderItem OrderItem;
+
+    private EnteredBy EnteredBy;
+
+    private OrderCategory OrderCategory;
+
+    private String FromTime;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setPlacerId(String PlacerId){
+        this.PlacerId = PlacerId;
+    }
+    public String getPlacerId(){
+        return this.PlacerId;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setFillerId(String FillerId){
+        this.FillerId = FillerId;
+    }
+    public String getFillerId(){
+        return this.FillerId;
+    }
+    public void setOrderedBy(OrderedBy OrderedBy){
+        this.OrderedBy = OrderedBy;
+    }
+    public OrderedBy getOrderedBy(){
+        return this.OrderedBy;
+    }
+    public void setEnteringOrganization(EnteringOrganization EnteringOrganization){
+        this.EnteringOrganization = EnteringOrganization;
+    }
+    public EnteringOrganization getEnteringOrganization(){
+        return this.EnteringOrganization;
+    }
+    public void setPriority(Priority Priority){
+        this.Priority = Priority;
+    }
+    public Priority getPriority(){
+        return this.Priority;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setTextInstruction(String TextInstruction){
+        this.TextInstruction = TextInstruction;
+    }
+    public String getTextInstruction(){
+        return this.TextInstruction;
+    }
+    public void setOrderQuantity(String OrderQuantity){
+        this.OrderQuantity = OrderQuantity;
+    }
+    public String getOrderQuantity(){
+        return this.OrderQuantity;
+    }
+    public void setResult(Result Result){
+        this.Result = Result;
+    }
+    public Result getResult(){
+        return this.Result;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setSpecimenCollectedTime(String SpecimenCollectedTime){
+        this.SpecimenCollectedTime = SpecimenCollectedTime;
+    }
+    public String getSpecimenCollectedTime(){
+        return this.SpecimenCollectedTime;
+    }
+    public void setVerifiedComments(String VerifiedComments){
+        this.VerifiedComments = VerifiedComments;
+    }
+    public String getVerifiedComments(){
+        return this.VerifiedComments;
+    }
+    public void setOrderItem(OrderItem OrderItem){
+        this.OrderItem = OrderItem;
+    }
+    public OrderItem getOrderItem(){
+        return this.OrderItem;
+    }
+    public void setEnteredBy(EnteredBy EnteredBy){
+        this.EnteredBy = EnteredBy;
+    }
+    public EnteredBy getEnteredBy(){
+        return this.EnteredBy;
+    }
+    public void setOrderCategory(OrderCategory OrderCategory){
+        this.OrderCategory = OrderCategory;
+    }
+    public OrderCategory getOrderCategory(){
+        return this.OrderCategory;
+    }
+    public void setFromTime(String FromTime){
+        this.FromTime = FromTime;
+    }
+    public String getFromTime(){
+        return this.FromTime;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class RadOrders
+{
+    private List<RadOrder> RadOrder;
+
+    public void setRadOrder(List<RadOrder> RadOrder){
+        this.RadOrder = RadOrder;
+    }
+    public List<RadOrder> getRadOrder(){
+        return this.RadOrder;
+    }
+}
+
+==================================
+package obj;
+public class Allergy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class AllergyCategory
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Allergy
+{
+    private String Status;
+
+    private Allergy Allergy;
+
+    private AllergyCategory AllergyCategory;
+
+    private String Comments;
+
+    private String UpdatedOn;
+
+    private EnteredAt EnteredAt;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setAllergy(Allergy Allergy){
+        this.Allergy = Allergy;
+    }
+    public Allergy getAllergy(){
+        return this.Allergy;
+    }
+    public void setAllergyCategory(AllergyCategory AllergyCategory){
+        this.AllergyCategory = AllergyCategory;
+    }
+    public AllergyCategory getAllergyCategory(){
+        return this.AllergyCategory;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setUpdatedOn(String UpdatedOn){
+        this.UpdatedOn = UpdatedOn;
+    }
+    public String getUpdatedOn(){
+        return this.UpdatedOn;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Allergies
+{
+    private List<Allergy> Allergy;
+
+    public void setAllergy(List<Allergy> Allergy){
+        this.Allergy = Allergy;
+    }
+    public List<Allergy> getAllergy(){
+        return this.Allergy;
+    }
+}
+
+==================================
+package obj;
+public class Type
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class OrderItem
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+}
+
+==================================
+package obj;
+public class CareProvider
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class EnteredBy
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class Location
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Appointment
+{
+    private String Status;
+
+    private Type Type;
+
+    private String NoShow;
+
+    private String EnteredOn;
+
+    private OrderItem OrderItem;
+
+    private CareProvider CareProvider;
+
+    private EnteredBy EnteredBy;
+
+    private String FillerApptId;
+
+    private String FromTime;
+
+    private String EncounterNumber;
+
+    private Location Location;
+
+    private EnteredAt EnteredAt;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setType(Type Type){
+        this.Type = Type;
+    }
+    public Type getType(){
+        return this.Type;
+    }
+    public void setNoShow(String NoShow){
+        this.NoShow = NoShow;
+    }
+    public String getNoShow(){
+        return this.NoShow;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setOrderItem(OrderItem OrderItem){
+        this.OrderItem = OrderItem;
+    }
+    public OrderItem getOrderItem(){
+        return this.OrderItem;
+    }
+    public void setCareProvider(CareProvider CareProvider){
+        this.CareProvider = CareProvider;
+    }
+    public CareProvider getCareProvider(){
+        return this.CareProvider;
+    }
+    public void setEnteredBy(EnteredBy EnteredBy){
+        this.EnteredBy = EnteredBy;
+    }
+    public EnteredBy getEnteredBy(){
+        return this.EnteredBy;
+    }
+    public void setFillerApptId(String FillerApptId){
+        this.FillerApptId = FillerApptId;
+    }
+    public String getFillerApptId(){
+        return this.FillerApptId;
+    }
+    public void setFromTime(String FromTime){
+        this.FromTime = FromTime;
+    }
+    public String getFromTime(){
+        return this.FromTime;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setLocation(Location Location){
+        this.Location = Location;
+    }
+    public Location getLocation(){
+        return this.Location;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Appointments
+{
+    private List<Appointment> Appointment;
+
+    public void setAppointment(List<Appointment> Appointment){
+        this.Appointment = Appointment;
+    }
+    public List<Appointment> getAppointment(){
+        return this.Appointment;
+    }
+}
+
+==================================
+package obj;
+public class CareProviderType
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String ProfessionalSuffix;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setProfessionalSuffix(String ProfessionalSuffix){
+        this.ProfessionalSuffix = ProfessionalSuffix;
+    }
+    public String getProfessionalSuffix(){
+        return this.ProfessionalSuffix;
+    }
+}
+
+==================================
+package obj;
+public class OrderedBy
+{
+    private String Description;
+
+    private CareProviderType CareProviderType;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCareProviderType(CareProviderType CareProviderType){
+        this.CareProviderType = CareProviderType;
+    }
+    public CareProviderType getCareProviderType(){
+        return this.CareProviderType;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class Priority
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PriorCode
+{
+    private String Type;
+
+    private String Description;
+
+    private String Code;
+
+    private String CodeSystem;
+
+    public void setType(String Type){
+        this.Type = Type;
+    }
+    public String getType(){
+        return this.Type;
+    }
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setCodeSystem(String CodeSystem){
+        this.CodeSystem = CodeSystem;
+    }
+    public String getCodeSystem(){
+        return this.CodeSystem;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class PriorCodes
+{
+    private List<PriorCode> PriorCode;
+
+    public void setPriorCode(List<PriorCode> PriorCode){
+        this.PriorCode = PriorCode;
+    }
+    public List<PriorCode> getPriorCode(){
+        return this.PriorCode;
+    }
+}
+
+==================================
+package obj;
+public class OrderItem
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private PriorCodes PriorCodes;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
+    }
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Frequency
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class DoseUoM
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class DosageStep
+{
+    private String DoseQuantity;
+
+    private DoseUoM DoseUoM;
+
+    private String TextInstruction;
+
+    public void setDoseQuantity(String DoseQuantity){
+        this.DoseQuantity = DoseQuantity;
+    }
+    public String getDoseQuantity(){
+        return this.DoseQuantity;
+    }
+    public void setDoseUoM(DoseUoM DoseUoM){
+        this.DoseUoM = DoseUoM;
+    }
+    public DoseUoM getDoseUoM(){
+        return this.DoseUoM;
+    }
+    public void setTextInstruction(String TextInstruction){
+        this.TextInstruction = TextInstruction;
+    }
+    public String getTextInstruction(){
+        return this.TextInstruction;
+    }
+}
+
+==================================
+package obj;
+public class DosageSteps
+{
+    private DosageStep DosageStep;
+
+    public void setDosageStep(DosageStep DosageStep){
+        this.DosageStep = DosageStep;
+    }
+    public DosageStep getDosageStep(){
+        return this.DosageStep;
+    }
+}
+
+==================================
+package obj;
+public class EnteredBy
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class OrderCategory
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class DosageForm
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class Route
+{
+    private String Description;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Medication
+{
+    private String Status;
+
+    private String PlacerId;
+
+    private String EnteredOn;
+
+    private String FillerId;
+
+    private OrderedBy OrderedBy;
+
+    private Priority Priority;
+
+    private String Comments;
+
+    private String TextInstruction;
+
+    private String PrescriptionNumber;
+
+    private String OrderQuantity;
+
+    private String EncounterNumber;
+
+    private OrderItem OrderItem;
+
+    private String PharmacyStatus;
+
+    private Frequency Frequency;
+
+    private DosageSteps DosageSteps;
+
+    private EnteredBy EnteredBy;
+
+    private OrderCategory OrderCategory;
+
+    private String FromTime;
+
+    private DosageForm DosageForm;
+
+    private Route Route;
+
+    private EnteredAt EnteredAt;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setPlacerId(String PlacerId){
+        this.PlacerId = PlacerId;
+    }
+    public String getPlacerId(){
+        return this.PlacerId;
+    }
+    public void setEnteredOn(String EnteredOn){
+        this.EnteredOn = EnteredOn;
+    }
+    public String getEnteredOn(){
+        return this.EnteredOn;
+    }
+    public void setFillerId(String FillerId){
+        this.FillerId = FillerId;
+    }
+    public String getFillerId(){
+        return this.FillerId;
+    }
+    public void setOrderedBy(OrderedBy OrderedBy){
+        this.OrderedBy = OrderedBy;
+    }
+    public OrderedBy getOrderedBy(){
+        return this.OrderedBy;
+    }
+    public void setPriority(Priority Priority){
+        this.Priority = Priority;
+    }
+    public Priority getPriority(){
+        return this.Priority;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setTextInstruction(String TextInstruction){
+        this.TextInstruction = TextInstruction;
+    }
+    public String getTextInstruction(){
+        return this.TextInstruction;
+    }
+    public void setPrescriptionNumber(String PrescriptionNumber){
+        this.PrescriptionNumber = PrescriptionNumber;
+    }
+    public String getPrescriptionNumber(){
+        return this.PrescriptionNumber;
+    }
+    public void setOrderQuantity(String OrderQuantity){
+        this.OrderQuantity = OrderQuantity;
+    }
+    public String getOrderQuantity(){
+        return this.OrderQuantity;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setOrderItem(OrderItem OrderItem){
+        this.OrderItem = OrderItem;
+    }
+    public OrderItem getOrderItem(){
+        return this.OrderItem;
+    }
+    public void setPharmacyStatus(String PharmacyStatus){
+        this.PharmacyStatus = PharmacyStatus;
+    }
+    public String getPharmacyStatus(){
+        return this.PharmacyStatus;
+    }
+    public void setFrequency(Frequency Frequency){
+        this.Frequency = Frequency;
+    }
+    public Frequency getFrequency(){
+        return this.Frequency;
+    }
+    public void setDosageSteps(DosageSteps DosageSteps){
+        this.DosageSteps = DosageSteps;
+    }
+    public DosageSteps getDosageSteps(){
+        return this.DosageSteps;
+    }
+    public void setEnteredBy(EnteredBy EnteredBy){
+        this.EnteredBy = EnteredBy;
+    }
+    public EnteredBy getEnteredBy(){
+        return this.EnteredBy;
+    }
+    public void setOrderCategory(OrderCategory OrderCategory){
+        this.OrderCategory = OrderCategory;
+    }
+    public OrderCategory getOrderCategory(){
+        return this.OrderCategory;
+    }
+    public void setFromTime(String FromTime){
+        this.FromTime = FromTime;
+    }
+    public String getFromTime(){
+        return this.FromTime;
+    }
+    public void setDosageForm(DosageForm DosageForm){
+        this.DosageForm = DosageForm;
+    }
+    public DosageForm getDosageForm(){
+        return this.DosageForm;
+    }
+    public void setRoute(Route Route){
+        this.Route = Route;
+    }
+    public Route getRoute(){
+        return this.Route;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Medications
+{
+    private List<Medication> Medication;
+
+    public void setMedication(List<Medication> Medication){
+        this.Medication = Medication;
+    }
+    public List<Medication> getMedication(){
+        return this.Medication;
+    }
+}
+
+==================================
+package obj;
+public class Zip
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class State
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class City
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Address
+{
+    private Zip Zip;
+
+    private State State;
+
+    private String Street;
+
+    private City City;
+
+    public void setZip(Zip Zip){
+        this.Zip = Zip;
+    }
+    public Zip getZip(){
+        return this.Zip;
+    }
+    public void setState(State State){
+        this.State = State;
+    }
+    public State getState(){
+        return this.State;
+    }
+    public void setStreet(String Street){
+        this.Street = Street;
+    }
+    public String getStreet(){
+        return this.Street;
+    }
+    public void setCity(City City){
+        this.City = City;
+    }
+    public City getCity(){
+        return this.City;
+    }
+}
+
+==================================
+package obj;
+public class ContactInfo
+{
+    private String EmailAddress;
+
+    public void setEmailAddress(String EmailAddress){
+        this.EmailAddress = EmailAddress;
+    }
+    public String getEmailAddress(){
+        return this.EmailAddress;
+    }
+}
+
+==================================
+package obj;
+public class CareProviderType
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class Clinician
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private Address Address;
+
+    private ContactInfo ContactInfo;
+
+    private CareProviderType CareProviderType;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setAddress(Address Address){
+        this.Address = Address;
+    }
+    public Address getAddress(){
+        return this.Address;
+    }
+    public void setContactInfo(ContactInfo ContactInfo){
+        this.ContactInfo = ContactInfo;
+    }
+    public ContactInfo getContactInfo(){
+        return this.ContactInfo;
+    }
+    public void setCareProviderType(CareProviderType CareProviderType){
+        this.CareProviderType = CareProviderType;
+    }
+    public CareProviderType getCareProviderType(){
+        return this.CareProviderType;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class ClinicalRelationship
+{
+    private String StartDate;
+
+    private String UpdatedOn;
+
+    private Clinician Clinician;
+
+    public void setStartDate(String StartDate){
+        this.StartDate = StartDate;
+    }
+    public String getStartDate(){
+        return this.StartDate;
+    }
+    public void setUpdatedOn(String UpdatedOn){
+        this.UpdatedOn = UpdatedOn;
+    }
+    public String getUpdatedOn(){
+        return this.UpdatedOn;
+    }
+    public void setClinician(Clinician Clinician){
+        this.Clinician = Clinician;
+    }
+    public Clinician getClinician(){
+        return this.Clinician;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class ClinicalRelationships
+{
+    private List<ClinicalRelationship> ClinicalRelationship;
+
+    public void setClinicalRelationship(List<ClinicalRelationship> ClinicalRelationship){
+        this.ClinicalRelationship = ClinicalRelationship;
+    }
+    public List<ClinicalRelationship> getClinicalRelationship(){
+        return this.ClinicalRelationship;
+    }
+}
+
+==================================
+package obj;
+public class Name
+{
+    private String FamilyName;
+
+    private String GivenName;
+
+    private String MiddleName;
+
+    public void setFamilyName(String FamilyName){
+        this.FamilyName = FamilyName;
+    }
+    public String getFamilyName(){
+        return this.FamilyName;
+    }
+    public void setGivenName(String GivenName){
+        this.GivenName = GivenName;
+    }
+    public String getGivenName(){
+        return this.GivenName;
+    }
+    public void setMiddleName(String MiddleName){
+        this.MiddleName = MiddleName;
+    }
+    public String getMiddleName(){
+        return this.MiddleName;
+    }
+}
+
+==================================
+package obj;
+public class OrderedBy
+{
+    private String Description;
+
+    private String Code;
+
+    private Name Name;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setName(Name Name){
+        this.Name = Name;
+    }
+    public Name getName(){
+        return this.Name;
+    }
+}
+
+==================================
+package obj;
+public class Priority
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PriorCode
+{
+    private String Type;
+
+    private String Description;
+
+    private String Code;
+
+    private String CodeSystem;
+
+    public void setType(String Type){
+        this.Type = Type;
+    }
+    public String getType(){
+        return this.Type;
+    }
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setCodeSystem(String CodeSystem){
+        this.CodeSystem = CodeSystem;
+    }
+    public String getCodeSystem(){
+        return this.CodeSystem;
+    }
+}
+
+==================================
+package obj;
+public class PriorCodes
+{
+    private PriorCode PriorCode;
+
+    public void setPriorCode(PriorCode PriorCode){
+        this.PriorCode = PriorCode;
+    }
+    public PriorCode getPriorCode(){
+        return this.PriorCode;
+    }
+}
+
+==================================
+package obj;
+public class TestItemCode
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private PriorCodes PriorCodes;
+
+    private String IsNumeric;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
+    }
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
+    }
+    public void setIsNumeric(String IsNumeric){
+        this.IsNumeric = IsNumeric;
+    }
+    public String getIsNumeric(){
+        return this.IsNumeric;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class PerformedAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class LabResultItem
+{
+    private String ResultInterpretation;
+
+    private String ObservationValueType;
+
+    private TestItemCode TestItemCode;
+
+    private String ResultValueUnits;
+
+    private String ResultValue;
+
+    private String ResultNormalRange;
+
+    private String TestItemStatus;
+
+    private PerformedAt PerformedAt;
+
+    public void setResultInterpretation(String ResultInterpretation){
+        this.ResultInterpretation = ResultInterpretation;
+    }
+    public String getResultInterpretation(){
+        return this.ResultInterpretation;
+    }
+    public void setObservationValueType(String ObservationValueType){
+        this.ObservationValueType = ObservationValueType;
+    }
+    public String getObservationValueType(){
+        return this.ObservationValueType;
+    }
+    public void setTestItemCode(TestItemCode TestItemCode){
+        this.TestItemCode = TestItemCode;
+    }
+    public TestItemCode getTestItemCode(){
+        return this.TestItemCode;
+    }
+    public void setResultValueUnits(String ResultValueUnits){
+        this.ResultValueUnits = ResultValueUnits;
+    }
+    public String getResultValueUnits(){
+        return this.ResultValueUnits;
+    }
+    public void setResultValue(String ResultValue){
+        this.ResultValue = ResultValue;
+    }
+    public String getResultValue(){
+        return this.ResultValue;
+    }
+    public void setResultNormalRange(String ResultNormalRange){
+        this.ResultNormalRange = ResultNormalRange;
+    }
+    public String getResultNormalRange(){
+        return this.ResultNormalRange;
+    }
+    public void setTestItemStatus(String TestItemStatus){
+        this.TestItemStatus = TestItemStatus;
+    }
+    public String getTestItemStatus(){
+        return this.TestItemStatus;
+    }
+    public void setPerformedAt(PerformedAt PerformedAt){
+        this.PerformedAt = PerformedAt;
+    }
+    public PerformedAt getPerformedAt(){
+        return this.PerformedAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class ResultItems
+{
+    private List<LabResultItem> LabResultItem;
+
+    public void setLabResultItem(List<LabResultItem> LabResultItem){
+        this.LabResultItem = LabResultItem;
+    }
+    public List<LabResultItem> getLabResultItem(){
+        return this.LabResultItem;
+    }
+}
+
+==================================
+package obj;
+public class Result
+{
+    private String ResultInterpretation;
+
+    private ResultItems ResultItems;
+
+    private String ResultStatus;
+
+    private String ResultTime;
+
+    private String Comments;
+
+    private String DocumentURL;
+
+    private String ResultType;
+
+    public void setResultInterpretation(String ResultInterpretation){
+        this.ResultInterpretation = ResultInterpretation;
+    }
+    public String getResultInterpretation(){
+        return this.ResultInterpretation;
+    }
+    public void setResultItems(ResultItems ResultItems){
+        this.ResultItems = ResultItems;
+    }
+    public ResultItems getResultItems(){
+        return this.ResultItems;
+    }
+    public void setResultStatus(String ResultStatus){
+        this.ResultStatus = ResultStatus;
+    }
+    public String getResultStatus(){
+        return this.ResultStatus;
+    }
+    public void setResultTime(String ResultTime){
+        this.ResultTime = ResultTime;
+    }
+    public String getResultTime(){
+        return this.ResultTime;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setDocumentURL(String DocumentURL){
+        this.DocumentURL = DocumentURL;
+    }
+    public String getDocumentURL(){
+        return this.DocumentURL;
+    }
+    public void setResultType(String ResultType){
+        this.ResultType = ResultType;
+    }
+    public String getResultType(){
+        return this.ResultType;
+    }
+}
+
+==================================
+package obj;
+public class PriorCode
+{
+    private String Type;
+
+    private String Description;
+
+    private String Code;
+
+    private String CodeSystem;
+
+    public void setType(String Type){
+        this.Type = Type;
+    }
+    public String getType(){
+        return this.Type;
+    }
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+    public void setCodeSystem(String CodeSystem){
+        this.CodeSystem = CodeSystem;
+    }
+    public String getCodeSystem(){
+        return this.CodeSystem;
+    }
+}
+
+==================================
+package obj;
+public class PriorCodes
+{
+    private PriorCode PriorCode;
+
+    public void setPriorCode(PriorCode PriorCode){
+        this.PriorCode = PriorCode;
+    }
+    public PriorCode getPriorCode(){
+        return this.PriorCode;
+    }
+}
+
+==================================
+package obj;
+public class OrderItem
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private PriorCodes PriorCodes;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setPriorCodes(PriorCodes PriorCodes){
+        this.PriorCodes = PriorCodes;
+    }
+    public PriorCodes getPriorCodes(){
+        return this.PriorCodes;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class OrderCategory
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class LabOrder
+{
+    private String Status;
+
+    private String PlacerId;
+
+    private String FillerId;
+
+    private OrderedBy OrderedBy;
+
+    private Priority Priority;
+
+    private String Comments;
+
+    private Result Result;
+
+    private String EncounterNumber;
+
+    private String SpecimenCollectedTime;
+
+    private String VerifiedComments;
+
+    private OrderItem OrderItem;
+
+    private OrderCategory OrderCategory;
+
+    private String FromTime;
+
+    public void setStatus(String Status){
+        this.Status = Status;
+    }
+    public String getStatus(){
+        return this.Status;
+    }
+    public void setPlacerId(String PlacerId){
+        this.PlacerId = PlacerId;
+    }
+    public String getPlacerId(){
+        return this.PlacerId;
+    }
+    public void setFillerId(String FillerId){
+        this.FillerId = FillerId;
+    }
+    public String getFillerId(){
+        return this.FillerId;
+    }
+    public void setOrderedBy(OrderedBy OrderedBy){
+        this.OrderedBy = OrderedBy;
+    }
+    public OrderedBy getOrderedBy(){
+        return this.OrderedBy;
+    }
+    public void setPriority(Priority Priority){
+        this.Priority = Priority;
+    }
+    public Priority getPriority(){
+        return this.Priority;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setResult(Result Result){
+        this.Result = Result;
+    }
+    public Result getResult(){
+        return this.Result;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setSpecimenCollectedTime(String SpecimenCollectedTime){
+        this.SpecimenCollectedTime = SpecimenCollectedTime;
+    }
+    public String getSpecimenCollectedTime(){
+        return this.SpecimenCollectedTime;
+    }
+    public void setVerifiedComments(String VerifiedComments){
+        this.VerifiedComments = VerifiedComments;
+    }
+    public String getVerifiedComments(){
+        return this.VerifiedComments;
+    }
+    public void setOrderItem(OrderItem OrderItem){
+        this.OrderItem = OrderItem;
+    }
+    public OrderItem getOrderItem(){
+        return this.OrderItem;
+    }
+    public void setOrderCategory(OrderCategory OrderCategory){
+        this.OrderCategory = OrderCategory;
+    }
+    public OrderCategory getOrderCategory(){
+        return this.OrderCategory;
+    }
+    public void setFromTime(String FromTime){
+        this.FromTime = FromTime;
+    }
+    public String getFromTime(){
+        return this.FromTime;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class LabOrders
+{
+    private List<LabOrder> LabOrder;
+
+    public void setLabOrder(List<LabOrder> LabOrder){
+        this.LabOrder = LabOrder;
+    }
+    public List<LabOrder> getLabOrder(){
+        return this.LabOrder;
+    }
+}
+
+==================================
+package obj;
+public class ObservationValueUnits
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class ObservationCode
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private ObservationValueUnits ObservationValueUnits;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setObservationValueUnits(ObservationValueUnits ObservationValueUnits){
+        this.ObservationValueUnits = ObservationValueUnits;
+    }
+    public ObservationValueUnits getObservationValueUnits(){
+        return this.ObservationValueUnits;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Observation
+{
+    private ObservationCode ObservationCode;
+
+    private String ObservationValueType;
+
+    private String Comments;
+
+    private String ObservationValue;
+
+    private String ObservationTime;
+
+    private String EncounterNumber;
+
+    public void setObservationCode(ObservationCode ObservationCode){
+        this.ObservationCode = ObservationCode;
+    }
+    public ObservationCode getObservationCode(){
+        return this.ObservationCode;
+    }
+    public void setObservationValueType(String ObservationValueType){
+        this.ObservationValueType = ObservationValueType;
+    }
+    public String getObservationValueType(){
+        return this.ObservationValueType;
+    }
+    public void setComments(String Comments){
+        this.Comments = Comments;
+    }
+    public String getComments(){
+        return this.Comments;
+    }
+    public void setObservationValue(String ObservationValue){
+        this.ObservationValue = ObservationValue;
+    }
+    public String getObservationValue(){
+        return this.ObservationValue;
+    }
+    public void setObservationTime(String ObservationTime){
+        this.ObservationTime = ObservationTime;
+    }
+    public String getObservationTime(){
+        return this.ObservationTime;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Observations
+{
+    private List<Observation> Observation;
+
+    public void setObservation(List<Observation> Observation){
+        this.Observation = Observation;
+    }
+    public List<Observation> getObservation(){
+        return this.Observation;
+    }
+}
+
+==================================
+package obj;
+public class Status
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class DiagnosingClinician
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class DiagnosisType
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Diagnosis
+{
+    private String Description;
+
+    private String SDACodingStandard;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setSDACodingStandard(String SDACodingStandard){
+        this.SDACodingStandard = SDACodingStandard;
+    }
+    public String getSDACodingStandard(){
+        return this.SDACodingStandard;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class EnteredAt
+{
+    private String Description;
+
+    private String Code;
+
+    public void setDescription(String Description){
+        this.Description = Description;
+    }
+    public String getDescription(){
+        return this.Description;
+    }
+    public void setCode(String Code){
+        this.Code = Code;
+    }
+    public String getCode(){
+        return this.Code;
+    }
+}
+
+==================================
+package obj;
+public class Diagnosis
+{
+    private Status Status;
+
+    private DiagnosingClinician DiagnosingClinician;
+
+    private DiagnosisType DiagnosisType;
+
+    private Diagnosis Diagnosis;
+
+    private String EncounterNumber;
+
+    private EnteredAt EnteredAt;
+
+    public void setStatus(Status Status){
+        this.Status = Status;
+    }
+    public Status getStatus(){
+        return this.Status;
+    }
+    public void setDiagnosingClinician(DiagnosingClinician DiagnosingClinician){
+        this.DiagnosingClinician = DiagnosingClinician;
+    }
+    public DiagnosingClinician getDiagnosingClinician(){
+        return this.DiagnosingClinician;
+    }
+    public void setDiagnosisType(DiagnosisType DiagnosisType){
+        this.DiagnosisType = DiagnosisType;
+    }
+    public DiagnosisType getDiagnosisType(){
+        return this.DiagnosisType;
+    }
+    public void setDiagnosis(Diagnosis Diagnosis){
+        this.Diagnosis = Diagnosis;
+    }
+    public Diagnosis getDiagnosis(){
+        return this.Diagnosis;
+    }
+    public void setEncounterNumber(String EncounterNumber){
+        this.EncounterNumber = EncounterNumber;
+    }
+    public String getEncounterNumber(){
+        return this.EncounterNumber;
+    }
+    public void setEnteredAt(EnteredAt EnteredAt){
+        this.EnteredAt = EnteredAt;
+    }
+    public EnteredAt getEnteredAt(){
+        return this.EnteredAt;
+    }
+}
+
+==================================
+package obj;
+import java.util.ArrayList;
+import java.util.List;
+public class Diagnoses
+{
+    private List<Diagnosis> Diagnosis;
+
+    public void setDiagnosis(List<Diagnosis> Diagnosis){
+        this.Diagnosis = Diagnosis;
+    }
+    public List<Diagnosis> getDiagnosis(){
+        return this.Diagnosis;
+    }
+}
+
+==================================
+package obj;
+public class Container
+{
+    private SocialHistories SocialHistories;
+
+    private String Action;
+
+    private FamilyHistories FamilyHistories;
+
+    private Encounters Encounters;
+
+    private Patient Patient;
+
+    private Procedures Procedures;
+
+    private RadOrders RadOrders;
+
+    private Allergies Allergies;
+
+    private Appointments Appointments;
+
+    private Medications Medications;
+
+    private ClinicalRelationships ClinicalRelationships;
+
+    private LabOrders LabOrders;
+
+    private Observations Observations;
+
+    private Diagnoses Diagnoses;
+
+    public void setSocialHistories(SocialHistories SocialHistories){
+        this.SocialHistories = SocialHistories;
+    }
+    public SocialHistories getSocialHistories(){
+        return this.SocialHistories;
+    }
+    public void setAction(String Action){
+        this.Action = Action;
+    }
+    public String getAction(){
+        return this.Action;
+    }
+    public void setFamilyHistories(FamilyHistories FamilyHistories){
+        this.FamilyHistories = FamilyHistories;
+    }
+    public FamilyHistories getFamilyHistories(){
+        return this.FamilyHistories;
+    }
+    public void setEncounters(Encounters Encounters){
+        this.Encounters = Encounters;
+    }
+    public Encounters getEncounters(){
+        return this.Encounters;
+    }
+    public void setPatient(Patient Patient){
+        this.Patient = Patient;
+    }
+    public Patient getPatient(){
+        return this.Patient;
+    }
+    public void setProcedures(Procedures Procedures){
+        this.Procedures = Procedures;
+    }
+    public Procedures getProcedures(){
+        return this.Procedures;
+    }
+    public void setRadOrders(RadOrders RadOrders){
+        this.RadOrders = RadOrders;
+    }
+    public RadOrders getRadOrders(){
+        return this.RadOrders;
+    }
+    public void setAllergies(Allergies Allergies){
+        this.Allergies = Allergies;
+    }
+    public Allergies getAllergies(){
+        return this.Allergies;
+    }
+    public void setAppointments(Appointments Appointments){
+        this.Appointments = Appointments;
+    }
+    public Appointments getAppointments(){
+        return this.Appointments;
+    }
+    public void setMedications(Medications Medications){
+        this.Medications = Medications;
+    }
+    public Medications getMedications(){
+        return this.Medications;
+    }
+    public void setClinicalRelationships(ClinicalRelationships ClinicalRelationships){
+        this.ClinicalRelationships = ClinicalRelationships;
+    }
+    public ClinicalRelationships getClinicalRelationships(){
+        return this.ClinicalRelationships;
+    }
+    public void setLabOrders(LabOrders LabOrders){
+        this.LabOrders = LabOrders;
+    }
+    public LabOrders getLabOrders(){
+        return this.LabOrders;
+    }
+    public void setObservations(Observations Observations){
+        this.Observations = Observations;
+    }
+    public Observations getObservations(){
+        return this.Observations;
+    }
+    public void setDiagnoses(Diagnoses Diagnoses){
+        this.Diagnoses = Diagnoses;
+    }
+    public Diagnoses getDiagnoses(){
+        return this.Diagnoses;
+    }
+}
+
+==================================
+package obj;
+public class Root
+{
+    private Container Container;
+
+    public void setContainer(Container Container){
+        this.Container = Container;
+    }
+    public Container getContainer(){
+        return this.Container;
+    }
+}
+
