@@ -8,14 +8,14 @@
       <title>Patient Search</title>
    </head>
    <body>
-		<form action="GetSDA.java" method="post">
+		<form action="getSDA" method="post">
 			<table>
 		   		<tr>
 		   			<td>
 		   				<label for="MRN">"MRN"</label>
 		   			</td>
 		   			<td>
-						<input type = "text" id="MRN"/>
+						<input type = "text" name="MRN"/>
 					</td>
 				</tr>	
 				<tr>
@@ -23,7 +23,7 @@
 		   				<label for="AssigningAuthority">"Assigned By"</label>
 		   			</td>
 		   			<td>
-						<select id="AssigningAuthority">
+						<select name="AssigningAuthority">
 							<option value="CEMS">CEMS</option>
 							<option value="CLAB">CLAB</option>
 							<option value="EMERGENCY">EMERGENCY</option>
@@ -54,7 +54,7 @@
 					</td>
 				</tr>  
 				<tr>
-					<submit>Submit</submit>
+					<input type="submit" value="Submit"/>
 				</tr>
 			</table>
 		</form>  

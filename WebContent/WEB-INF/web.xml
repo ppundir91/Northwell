@@ -9,4 +9,23 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>GetSDA</servlet-name>
+    <servlet-class>GetSDAServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ParseData</servlet-name>
+    <servlet-class>ParseDataServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetSDA</servlet-name>
+    <url-pattern>/getSDA</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ParseData</servlet-name>
+    <url-pattern>/parseData</url-pattern>
+  </servlet-mapping>
 </web-app>
