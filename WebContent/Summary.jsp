@@ -11,13 +11,7 @@
 </head>
 <body>
 	<%
-	Enumeration enames;
-	enames = session.getAttributeNames();
-	   while (enames.hasMoreElements()) {
-	      String name = (String) enames.nextElement();
-	      String value = "" + session.getAttribute(name);
-	      out.println(name + ":" + value);
-	   }
+	Map allergy=(Map)session.getAttribute("Allergies");
 	%>
 </body>
 </html>
