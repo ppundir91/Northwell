@@ -12,7 +12,7 @@
 			<table>
 		   		<tr>
 		   			<td>
-		   				<label for="MRN">"MRN"</label>
+		   				<label for="MRN">MRN</label>
 		   			</td>
 		   			<td>
 						<input type = "text" name="MRN"/>
@@ -20,7 +20,7 @@
 				</tr>	
 				<tr>
 					<td>
-		   				<label for="AssigningAuthority">"Assigned By"</label>
+		   				<label for="AssigningAuthority">Assigned By</label>
 		   			</td>
 		   			<td>
 						<select name="AssigningAuthority">
@@ -54,7 +54,9 @@
 					</td>
 				</tr>  
 				<tr>
-					<input type="submit" value="Submit"/>
+
+					<td><input type="submit" value="Submit"/></td>
+
 				</tr>
 			</table>
 		</form>  
